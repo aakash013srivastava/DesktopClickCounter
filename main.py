@@ -19,14 +19,5 @@ class NotifyApp(App):
     	self.click_count+=1
     	notification.notify('Click Count',str(self.click_count))
 
-
-"""clickCounter = Builder.load_string('''
-	BoxLayout:
-	    orientation:'vertical'
-	    Button:
-	        text:'Click Me !!!'
-	        on_press:root.notify_clicks()
-''')"""
-
 if __name__ == '__main__':
     NotifyApp().run()
