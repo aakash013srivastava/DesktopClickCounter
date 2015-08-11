@@ -15,7 +15,7 @@ class NotifyApp(App):
     	b.add_widget(btn)
         return b
 
-    def notify_clicks(self,*kwargs):
+    def notify_clicks(self,*args):
     	self.click_count+=1
     	notification.notify('Click Count',str(self.click_count))
 
